@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-bg: rgb(249 250 251 / 0.85);
+}
+
+html[class='dark'] {
+  --header-bg: rgb(63 63 70 / 0.85);
+}
+
+html[class='dark'] img {
+  filter: brightness(.8) contrast(1.2);
+}
+
+@layer base {
+  body {
+    @apply text-gray-900 dark:text-gray-50;
+    @apply bg-zinc-50 dark:bg-zinc-700;
+    font-family: "PingFang SC", "PingFang", "Lantinghei SC", "HiraginoSansGB-W3", "Microsoft Yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+  }
+}
