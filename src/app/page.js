@@ -24,10 +24,10 @@ export default async function Home() {
 function Hero () {
   return (
     <div className="flex gap-6 mt-16 px-4 py-12 max-sm:flex-col">
-      <Image src="/images/avatar.png" alt="Avatar" width={96} height={96} className="w-24 h-24 rounded-full"/>
+      <Image src="/images/avatar.jpeg" alt="Avatar" width={96} height={96} className="w-24 h-24 rounded-full"/>
       <div>
-        <h1 className="mb-1 text-2xl font-bold">嗨，我是 Hal 🤔</h1>
-        <p className="mb-4 text-gray-600 dark:text-gray-400">你好，我是一名设计师。这是我的个人网站，随意逛逛，希望喜欢。你也可以在下面这些地方找到我。</p>
+        <h1 className="mb-1 text-2xl font-bold">嗨，我是刘小白 👋</h1>
+        <p className="mb-4 text-gray-600 dark:text-gray-400">一名产品设计师和独立开发者，曾就职于美团、Moka。日常的工作主要是与产品、设计和用户体验相关，业务时间投入在独立开发中。</p>
         <div className="flex gap-3">
           <Link to="https://figma.com/@hallee" target="_blank">
             <Figma size={20}/>
