@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import { Dribbble, Figma, GitHub, Twitter } from 'react-feather'
+import { Figma, GitHub, Twitter } from 'react-feather'
 import cn from 'classnames'
 import { getPosts, getPhotos } from '@/lib/notion/api'
 import Center from '@/components/atoms/Center'
@@ -15,8 +15,8 @@ export default async function Home() {
   return (
     <Center>
       <Hero/>
-      <Photos photos={photos.slice(0, 5)}/>
       <Posts posts={posts}/>
+      <Photos photos={photos.slice(0, 5)}/>
     </Center>
   )
 }
@@ -29,17 +29,11 @@ function Hero () {
         <h1 className="mb-1 text-2xl font-bold">嗨，我是刘小白 👋</h1>
         <p className="mb-4 text-gray-600 dark:text-gray-400">一名产品设计师和独立开发者，曾就职于美团、Moka。日常的工作主要是与产品、设计和用户体验相关，业务时间投入在独立开发中。</p>
         <div className="flex gap-3">
-          <Link to="https://figma.com/@hallee" target="_blank">
+          <Link to="https://www.figma.com/@leon1996" target="_blank">
             <Figma size={20}/>
           </Link>
-          <Link to="https://github.com/leadream" target="_blank">
+          <Link to="https://github.com/leon19961215" target="_blank">
             <GitHub size={20}/>
-          </Link>
-          <Link to="https://twitter.com/leadream4" target="_blank">
-            <Twitter size={20}/>
-          </Link>
-          <Link to="https://dribbble.com/leadream" target="_blank">
-            <Dribbble size={20}/>
           </Link>
         </div>
       </div>

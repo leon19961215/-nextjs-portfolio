@@ -4,7 +4,7 @@ import Link from '@/components/atoms/Link'
 const Footer = function () {
   return (
     <footer className="flex flex-col gap-2 items-center w-full px-4 py-8 text-sm">
-      <div>© {(new Date()).getFullYear()} Hallee</div>
+      <div>© {(new Date()).getFullYear()} Leon</div>
       <nav className="flex gap-4 items-center">
         <Link to="/posts">文章</Link>
         <Link to="/photography">摄影</Link>
