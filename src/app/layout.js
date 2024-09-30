@@ -8,8 +8,8 @@ import 'prismjs/themes/prism-tomorrow.css'
 import 'react-medium-image-zoom/dist/styles.css'
 
 export const metadata = {
-  title: 'Hal\'s castle',
-  description: 'Hal\'s blog and gallery',
+  title: 'Leon\'s castle',
+  description: 'Leon\'s blog and gallery',
 }
 
 export default function App({ children }) {
